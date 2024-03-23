@@ -4,7 +4,7 @@
 
 // 1. EXTERNAL
 // 2. MODULE
-// 3. INCLINE
+// 3. INCLINE (yeah we are not doing that one)
 
 import Button from "./Button/Button.jsx"
 
