@@ -1,0 +1,53 @@
+:root {
+  --main-bg-color-light: #fff; /* Light mode background color */
+  --main-text-color-light: #333; /* Light mode text color */
+  --main-bg-color-dark: #222; /* Dark mode background color */
+  --main-text-color-dark: #fff; /* Dark mode text color */
+}
+
+.shopping-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-bg-color-light);
+  color: var(--main-text-color-light);
+  padding: 20px; /* Add padding for better spacing */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .shopping-container {
+    background-color: var(--main-bg-color-dark);
+    color: var(--main-text-color-dark);
+  }
+}
+
+/* Responsive adjustments */
+select,
+textarea {
+  width: 100%; /* Fill the container width */
+  max-width: 300px; /* Limit maximum width */
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0; /* Remove margin */
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 5px 0;
+}
